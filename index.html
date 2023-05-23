@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>StrainNet</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1B4SD7VTYV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1B4SD7VTYV');
+    </script>
+    <script src="../code/js/main.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="StrainNet.css">
+    <!-- Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../content/images/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../content/images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../content/images/icon/favicon-16x16.png">
+    <link rel="manifest" href="../content/images/icon/site.webmanifest">
+</head>
+<div class="gradient-bg"></div>
+<br>
+<div class="title_text">
+    Deep learning enables accurate soft tissue deformation estimation <i>in vivo</i>
+</div>
+<br>
+<!-- <div class="authors">
+    Reece D. Huff<sup style="font-size: var(--sup-author-font-size);">1</sup>, 
+    Frederick Houghton<sup style="font-size: var(--sup-author-font-size);">1</sup>, 
+    Conner C. Earl<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Elnaz Ghajar-Rahimi<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Ishan Dogra<sup style="font-size: var(--sup-author-font-size);">1</sup>, 
+    Andrew J. Darling<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Frederick W. Damen<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Gouyang Zhou<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Denny Yu<sup style="font-size: var(--sup-author-font-size);">3</sup>, 
+    Craig J. Goergen<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Carisa Harris-Adamson<sup style="font-size: var(--sup-author-font-size);">4,5</sup>, 
+    & Grace D. O’Connell<sup style="font-size: var(--sup-author-font-size);">1,6</sup>
+</div>
+<br>
+<div class="affils">
+    <sup style="font-size: var(--sup-author-font-size);">1</sup>UC Berkeley Mechanical Engineering
+    <br>
+    <sup style="font-size: var(--sup-author-font-size);">2</sup>Purdue University Biomedical Engineering
+    <br>
+    <sup style="font-size: var(--sup-author-font-size);">3</sup>Purdue University Industrial Engineering
+    <br>
+    <sup style="font-size: var(--sup-author-font-size);">4</sup>UC Berkeley School of Public Health
+    <br>
+    <sup style="font-size: var(--sup-author-font-size);">5</sup>UCSF Department of Occupational and Environmental Medicine
+    <br>
+    <sup style="font-size: var(--sup-author-font-size);">6</sup>UCSF Department of Orthopaedic Surger
+    <br>
+</div> -->
+<div class="authors">
+    Reece D. Huff<sup style="font-size: var(--sup-author-font-size);">1</sup>, 
+    Frederick Houghton<sup style="font-size: var(--sup-author-font-size);">1</sup>, 
+    Conner C. Earl<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Elnaz Ghajar-Rahimi<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Ishan Dogra<sup style="font-size: var(--sup-author-font-size);">1</sup>, 
+    Andrew J. Darling<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Frederick W. Damen<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Gouyang Zhou<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Denny Yu<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Craig J. Goergen<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Carisa Harris-Adamson<sup style="font-size: var(--sup-author-font-size);">1</sup>, 
+    & Grace D. O’Connell<sup style="font-size: var(--sup-author-font-size);">1</sup>
+</div>
+<br>
+<div class="affils">
+    <sup style="font-size: var(--sup-author-font-size);">1</sup>UC Berkeley & 
+    <sup style="font-size: var(--sup-author-font-size);">2</sup>Purdue University
+</div>
+<br>
+<div class="button-container">
+    <!-- <a href="https://reecehuff.com/StrainNet" class="button"> paper </a>
+    <a href="https://github.com/reecehuff/StrainNet" class="button"> code </a>
+    <a href="https://reecehuff.com/StrainNet" class="button"> slides </a>
+    <a href="../content/conferences/SB3C_Abstract_2023.pdf" class="button"> SB<sup style="font-size: var(--sup-author-font-size);">3</sup>C abstract </a>
+    <a href="tutorial/" class="button"> tutorial </a> -->
+    <a href="" class="button" style="width: 200px;"> paper [coming soon] </a>
+    <a href="" class="button" style="width: 200px;"> code [coming soon] </a>
+    <a href="" class="button" style="width: 200px;"> slides [coming soon] </a>
+    <a href="../content/conferences/SB3C_Abstract_2023.pdf" class="button" style="width: 200px;"> SB<sup style="font-size: var(--sup-author-font-size);">3</sup>C abstract </a>
+    <a href="tutorial/" class="button" style="width: 200px;"> tutorial </a>
+</div>
+<br>
+
+<img src="../StrainNet/StrainNet.gif" alt="StrainNet", 
+    style="border: solid; border-width: 4px; border-radius: 10px; width: 100%;">
+
+<hr>
+
+<body>
+    <h1>Introduction</h1>
+    <p>
+        <tt>StrainNet</tt> is a novel deep-learning approach for measuring strain from medical images. 
+        Understanding how materials and structures deform is essential for making improvements and optimizing designs in engineering applications, and in biology, accurately measuring tissue deformation in the human body is important for assessing its state in disease and health. However, accurately acquiring tissue deformation in vivo is difficult. 
+        The traditional image-based strain analysis techniques used in combination with medical imaging systems such as MRI and ultrasound are often limited by noise, out-of-plane motion, and image resolution. 
+        <tt>StrainNet</tt> is designed to overcome these limitations and provide a more complete understanding of the mechanics of tendons under various loads. 
+    </p>
+    <!-- <figure>
+        <img src="https://images.unsplash.com/photo-1477346611705-65d1883cee1e?auto=format&fit=crop&w=1000&q=80"/>
+        <figcaption>
+            Mountain landscape by.        
+        </figcaption>
+    </figure> -->
+    
+    <hr>
+    <h1>Background</h1>
+    <p>
+        &bull; Digital Image Correlation (DIC) and Direct Deformation Estimation (DDE) are traditional image-based strain analysis techniques that have been used in the past to measure deformation. 
+        <br>
+        <b>However, these techniques are often limited by noise, out-of-plane motion, and image resolution, particularly when applied to medical images in challenging, <i>in vivo</i> settings.</b>
+        <br>
+        &bull; <tt>StrainNet</tt> is a novel deep-learning approach that utilizes a training set based on real-world clinical observations and image artifacts to overcome the limitations of traditional image-based strain analysis techniques. 
+    </p>
+    <figure>
+        <img src="conceptual.png" style="width: 60%; padding: 0% 20%;"/>
+        <figcaption style="width: 100%;">
+            <b>Schematic of how DIC, DDE, and <tt>StrainNet</tt> calculate strain from an image pair.</b></h3>
+            <b>a.</b> The image on the left represents a reference image (i.e., I<sub style="font-size: 12px;">1</sub>), while the image on the right represents a deformed image (i.e., I<sub style="font-size: 12px;">2</sub>) with vertical tension in the top left (&lambda;<sub style="font-size: 12px;">yy</sub>), pure shear in the top right and lower left (&gamma;), and combination of shear with horizontal extension in the lower right corner (&lambda;<sub style="font-size: 12px;">xx</sub> and &gamma;).
+            <b>b.</b> DIC solves for displacements of four pixels using square subset regions (blue boxes) and uses numerically differentiation to estimate strain (dark purple dashed box). &delta;<sub style="font-size: 12px;">&alpha;&beta;</sub> represents the errors from numerical differentiation.
+            <b>c.</b> DDE solves for the deformation gradient of each subset directly (orange dashed box).
+            <b>d.</b> <tt>StrainNet</tt> estimates full-field strain given a pair of input images (I<sub style="font-size: 12px;">1</sub> and I<sub style="font-size: 12px;">2</sub>).
+        </figcaption>
+    </figure>
+
+    <hr>
+    <h1>Method</h1>
+    <p>
+        <tt>StrainNet</tt> uses a two-stage architecture, with a <tt>DeformationClassifier</tt> and three separate networks (<tt>TensionNet</tt>, <tt>CompressionNet</tt>, and <tt>RigidNet</tt>) to predict the strain. 
+        The <tt>DeformationClassifier</tt> determines if the image is undergoing tension, compression, or rigid body motion, and the image is then passed into the corresponding network for strain prediction. 
+        The training set for <tt>StrainNet</tt> was developed to emulate real-world observations and challenges, and the model was trained and tested on both synthetic and real images of flexor tendons undergoing contraction <i>in vivo</i>.
+    </p>
+    <figure>
+        <img src="architecture.png" style="width: 80%; padding: 0% 10%;"/>
+        <figcaption style="width: 100%;">
+            <b>Architecture of <tt>StrainNet</tt>.</b>
+            <b>a.</b> <tt>StrainNet</tt> comprises two stages: the first stage is the <tt>DeformationClassifier</tt>, and the second stage includes <tt>TensionNet</tt>, <tt>CompressionNet</tt>, and <tt>RigidNet</tt>.
+            <b>b.</b> The architecture of <tt>DeformationClassifier</tt> is composed of convolutional layers, max pooling, and ReLU activation functions. The resulting features are flattened and passed through a fully-connected neural network to predict the probability of the image pair undergoing tension, compression, or rigid body motions.
+            <b>c.</b> The architecture of <tt>TensionNet</tt>, <tt>CompressionNet</tt>, and <tt>RigidNet</tt> includes convolutional layers, max pooling, upsampling, skip layers, and ReLU activation functions, and predicts the full strain field (&epsilon;<sub style="font-size: 12px;">xx</sub>, &epsilon;<sub style="font-size: 12px;">xy</sub>, &epsilon;<sub style="font-size: 12px;">yy</sub>) between the two input images.
+            <b>d.</b> The key to the blocks in <b>b.</b> and <b>c.</b>. All blocks are connected by ReLU activation functions. 
+        </figcaption>
+    </figure>
+
+    <hr>
+    <h1>Results</h1>
+    <p>
+        <b>The results of our study demonstrate the effectiveness and potential of using deep learning for image-based strain analysis in challenging, <i>in vivo</i> settings. </b>
+        <br>
+        <br>
+        On both synthetic test cases with known deformations and real, experimentally collected ultrasound images of flexor tendons undergoing contraction <i>in vivo</i>, <tt>StrainNet</tt> outperforms traditional techniques such as DIC and DDE, with median strain errors 48-84% lower than DIC and DDE. 
+    </p>
+    <figure>
+        <img src="synthetic_quant.png" style="width: 95%";/>
+        <figcaption style="width: 100%;">
+            Performance of DIC, DDE, and <tt>StrainNet</tt> on sets of synthetically generated test cases where the largest applied strain, &epsilon;<sub style="font-size: 12px;"><i>long</i></sub><sup style="font-size: 12px; margin-left: -22px;"><i>max</i></sup>, is varied from 4% to 16%. 
+        </figcaption>
+    </figure>
+
+    <p>
+        Additionally, <tt>StrainNet</tt> revealed strong correlations between tendon strains and applied forces <i>in vivo</i>, highlighting the potential for <tt>StrainNet</tt> to be a valuable tool in the assessment of rehabilitation or disease progression.  
+    </p>
+    
+    <figure>
+        <img src="experimental_results.png" style="width: 40%; padding: 0% 30%;"/>
+        <figcaption style="width: 100%;">
+            Median longitudinal strain predicted by StrainNet during tendon contraction across all of the trials (n = 13). 
+            <tt style="font-size: 15px; color: #61BB46;">&#215;</tt>'s, 
+            <tt style="font-size: 15px; color: #009DDC;">&#9679</tt>'s, and 
+            <tt style="font-size: 15px; color: #F5821F;">&#9830</tt>'s 
+            correspond to 10%, 30%, and 50% maximum voluntary contraction (MVC).
+        </figcaption>
+    </figure>
+
+    <p>
+        In the following video, you'll see <tt>StrainNet</tt>'s predicted strain distribution for three levels of muscle contraction: 10%, 30%, and 50% of maximum voluntary contraction (MVC).
+    </p>
+    <video width=70% style="padding: 0% 15%;" controls>
+        <source src="exp.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+
+    <hr>
+    <h1>Limitations and future work</h1>
+    <p>
+        While our study demonstrates the effectiveness and potential of <tt>StrainNet</tt>, there are still limitations and areas for future work. 
+        For example, the approach may not be well-suited for certain types of tissue or deformation, and there is still room for improvement in terms of accuracy and robustness. 
+        Future work will focus on expanding the applicability of the approach and improving its accuracy and generalizability. 
+    </p>
+
+    <hr>
+    <h1>Citation</h1>
+    <p style=   "background-color: blueviolet;
+                color: white;
+                font-size: var(--sm-fs);
+                padding: 20px 20px 20px;
+                padding-left: 40px;
+                border: solid;
+                border-color: black;
+                border-width: 6px;
+                border-radius: 20px;
+                width: 90%;
+                text-indent: -20px;"
+        id="sample">
+        <tt>
+        @article{huff2023strainnet,
+            <br>
+            title = {Deep learning enables accurate soft tissue deformation estimation in vivo},
+            <br>
+            author = {Huff, Reece D and 
+                    Houghton, Frederick and  
+                    Earl, Conner C and  
+                    Ghajar-Rahimi, Elnaz and  
+                    Dogra, Ishan and  
+                    Darling, Andrew J  and  
+                    Damen, Frederick W. and  
+                    Zhou, Gouyang and  
+                    Yu, Denny and  
+                    Goergen, Craig J and  
+                    Harris-Adamson, Carisa and  
+                    O'Connell, Grace D} 
+            <br>
+            journal={TBD},
+            <br>
+            volume={TBD},
+            <br>
+            number={TBD},
+            <br>
+            pages={TBD},
+            <br>
+            year={2023}
+            <br>
+        }
+        <!-- <p2 style= "color: white;
+                    font-size: var(--sm-fs);
+                    padding-top: 2px;
+                    position: absolute;">}</p2> -->
+        </tt>
+    </p>
+    <br>
+
+    <hr>
+    <h1>Acknowledgements</h1>
+    <p>
+        This study was supported by the National Institutes of Health (NIH R21 AR075127-02), the National Science Foundation (NSF GRFP), and the National Institute for Occupational Safety and Health (NIOSH) / Centers for Disease Control and Prevention (CDC) (Training Grant T42OH008429).
+    </p>
+
+</body>
+</html>

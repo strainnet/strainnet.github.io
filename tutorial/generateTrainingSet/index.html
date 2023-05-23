@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176302866-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-176302866-1');
+    </script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../StrainNet.css">
+    <!-- <link rel="icon" type="image/x-icon" href="images/DiT/favicon.png"> -->
+    <!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+    <!-- Load the element definition -->
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+    <title>StrainNet</title>
+    <!-- Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../content/images/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../content/images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../content/images/icon/favicon-16x16.png">
+    <link rel="manifest" href="../content/images/icon/site.webmanifest">
+</head>
+<div class="gradient-bg"></div>
+<br>
+<div class="title_text">
+    Deep learning enables accurate soft tissue deformation estimation <i>in vivo</i>
+</div>
+<br>
+<!-- <div class="authors">
+    Reece D. Huff<sup style="font-size: var(--sup-author-font-size);">1</sup>, 
+    Frederick Houghton<sup style="font-size: var(--sup-author-font-size);">1</sup>, 
+    Conner C. Earl<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Elnaz Ghajar-Rahimi<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Ishan Dogra<sup style="font-size: var(--sup-author-font-size);">1</sup>, 
+    Andrew J. Darling<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Frederick W. Damen<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Gouyang Zhou<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Denny Yu<sup style="font-size: var(--sup-author-font-size);">3</sup>, 
+    Craig J. Goergen<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Carisa Harris-Adamson<sup style="font-size: var(--sup-author-font-size);">4,5</sup>, 
+    & Grace D. O’Connell<sup style="font-size: var(--sup-author-font-size);">1,6</sup>
+</div>
+<br>
+<div class="affils">
+    <sup style="font-size: var(--sup-author-font-size);">1</sup>UC Berkeley Mechanical Engineering
+    <br>
+    <sup style="font-size: var(--sup-author-font-size);">2</sup>Purdue University Biomedical Engineering
+    <br>
+    <sup style="font-size: var(--sup-author-font-size);">3</sup>Purdue University Industrial Engineering
+    <br>
+    <sup style="font-size: var(--sup-author-font-size);">4</sup>UC Berkeley School of Public Health
+    <br>
+    <sup style="font-size: var(--sup-author-font-size);">5</sup>UCSF Department of Occupational and Environmental Medicine
+    <br>
+    <sup style="font-size: var(--sup-author-font-size);">6</sup>UCSF Department of Orthopaedic Surger
+    <br>
+</div> -->
+<div class="authors">
+    Reece D. Huff<sup style="font-size: var(--sup-author-font-size);">1</sup>, 
+    Frederick Houghton<sup style="font-size: var(--sup-author-font-size);">1</sup>, 
+    Conner C. Earl<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Elnaz Ghajar-Rahimi<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Ishan Dogra<sup style="font-size: var(--sup-author-font-size);">1</sup>, 
+    Andrew J. Darling<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Frederick W. Damen<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Gouyang Zhou<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Denny Yu<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Craig J. Goergen<sup style="font-size: var(--sup-author-font-size);">2</sup>, 
+    Carisa Harris-Adamson<sup style="font-size: var(--sup-author-font-size);">1</sup>, 
+    & Grace D. O’Connell<sup style="font-size: var(--sup-author-font-size);">1</sup>
+</div>
+<br>
+<div class="affils">
+    <sup style="font-size: var(--sup-author-font-size);">1</sup>UC Berkeley & 
+    <sup style="font-size: var(--sup-author-font-size);">2</sup>Purdue University
+</div>
+<br>
+<div class="button-container">
+    <a href="../" class="button" style="width: 200px;"> back to tutorial </a>
+</div>
+<br>
+
+<img src="../../../StrainNet/StrainNet.gif" alt="StrainNet", 
+    style="border: solid; border-width: 4px; border-radius: 10px; width: 100%;">
+
+<hr>
+
+<body>
+    <h1>Generating a training set</h1>
+
+    <p>
+        <b>WARNING:</b> This tutorial may be outdated. Please visit the <tt>StrainNet</tt> GitHub repo for the most up-to-date documentation <a href="https://www.github.com/reecehuff/StrainNet/">here</a>. 
+    </p> 
+    
+    <tt style="font-size: 20px;">README.md</tt>
+    <br><br>
+    <zero-md src="README.md" 
+             style="border: solid;
+                    border-color: black;
+                    border-radius: 20px;
+                    padding: 20px;"
+    ></zero-md>
+
+    <hr>
+    <h1>Citation</h1>
+    <p style=   "background-color: blueviolet;
+                color: white;
+                font-size: var(--sm-fs);
+                padding: 20px 20px 20px;
+                padding-left: 40px;
+                border: solid;
+                border-color: black;
+                border-width: 6px;
+                border-radius: 20px;
+                width: 90%;
+                text-indent: -20px;"
+        id="sample">
+        <tt>
+        @article{huff2023strainnet,
+            <br>
+            title = {Deep learning enables accurate soft tissue deformation estimation in vivo},
+            <br>
+            author = {Huff, Reece D and 
+                    Houghton, Frederick and  
+                    Earl, Conner C and  
+                    Ghajar-Rahimi, Elnaz and  
+                    Dogra, Ishan and  
+                    Darling, Andrew J  and  
+                    Damen, Frederick W. and  
+                    Zhou, Gouyang and  
+                    Yu, Denny and  
+                    Goergen, Craig J and  
+                    Harris-Adamson, Carisa and  
+                    O'Connell, Grace D} 
+            <br>
+            journal={TBD},
+            <br>
+            volume={TBD},
+            <br>
+            number={TBD},
+            <br>
+            pages={TBD},
+            <br>
+            year={2023}
+            <br>
+        }
+        <!-- <p2 style= "color: white;
+                    font-size: var(--sm-fs);
+                    padding-top: 2px;
+                    position: absolute;">}</p2> -->
+        </tt>
+    </p>
+    <br>
+
+    <hr>
+    <h1>Acknowledgements</h1>
+    <p>
+        This study was supported by the National Institutes of Health (NIH R21 AR075127-02), the National Science Foundation (NSF GRFP), and the National Institute for Occupational Safety and Health (NIOSH) / Centers for Disease Control and Prevention (CDC) (Training Grant T42OH008429).
+    </p>
+
+</body>
+</html>

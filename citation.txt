@@ -1,0 +1,9 @@
+@inproceedings{huff2023strainnet,
+  title={Deep learning enables accurate estimation of tissue deformation in vivo},
+  author={Huff, Reece D and Houghton, Frederick and  Earl, Conner C and  
+            Ghajar-Rahimi, Elnaz and Dogra, Ishan and Darling, Andrew J  and 
+            Damen, Frederick W. and Zhou, Gouyang and Yu, Denny and 
+            Goergen, Craig J and Harris-Adamson, Carisa and O'Connell, Grace D},
+  booktitle={Summer Biomechanics, Bioengineering, and Biotransport Conference (SB3C)},
+  year={2023}
+}
