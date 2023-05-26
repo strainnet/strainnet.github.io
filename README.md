@@ -79,7 +79,7 @@ You should now see a `results` folder with some plots of the performance on a sy
 
 <!-- omit in toc -->
 
-### For a full tutorial, visit [https://reecehuff.com/StrainNet/tutorial/generateTrainingSet](https://reecehuff.com/StrainNet/tutorial/generateTrainingSet).
+### For a full tutorial, visit [https://strainnet.github.io/tutorial/generateTrainingSet](https://strainnet.github.io/tutorial/generateTrainingSet).
 
 <br/>
 
