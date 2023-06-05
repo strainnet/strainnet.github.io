@@ -195,40 +195,6 @@ To run the `eval.sh` script, simply execute the following command from the termi
 . scripts/eval.sh
 ```
 
-# Applying StrainNet to experimental images
-
-To apply StrainNet to experimental images that do not have known strains, you can use the `apply2experimental.py` script. This script loads the trained StrainNet model and processes the experimental images to predict the strains.
-
-To apply StrainNet to experimental images, use the following command:
-
-```
-python apply2experimental.py --model path/to/trained/model --experimental-data path/to/experimental/data
-```
-
-Replace `path/to/trained/model` with the actual path to the trained StrainNet model, and `path/to/experimental/data` with the actual path to the experimental data.
-
-The `apply2experimental.py` script will output the predicted strains to the terminal and/or save them to a file, depending on the specified command line arguments.
-
-## Arguments
-
-You can see a list of all the available arguments for the `apply2experimental.py` script by using the `--help` flag:
-
-```
-python apply2experimental.py --help
-```
-
-**Note:** The `apply2experimental.py` script requires the experimental images to be in a specific format that is compatible with StrainNet.
-
-## Applying StrainNet to human flexor tendons *in vivo*
-
-To apply the pretrained models real experimental data, you can use the `flexor_tendon.sh` script. This script will invoke the necessary scripts and pass the appropriate arguments to them.
-
-To run the `flexor_tendon.sh` script, simply execute the following command from the terminal:
-
-```
-. scripts/flexor_tendon.sh
-```
-
 # LICENSE
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/reecehuff/StrainNet/blob/main/LICENSE) file for details.
