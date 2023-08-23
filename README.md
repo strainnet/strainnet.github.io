@@ -47,7 +47,11 @@ Finally, make sure that Python path is correctly set. The commmand
 which python
 ```
 
-should display the path to the Anaconda's environment Python path, *e.g.*, `/opt/anaconda3/envs/StrainNet/bin/python`
+should display the path to the Anaconda's environment Python path, *e.g.*, `/opt/anaconda3/envs/StrainNet/bin/python`. The Windows equivalent to `which python` is 
+
+```
+where python
+```
 
 ## Downloading pre-trained models and data
 
