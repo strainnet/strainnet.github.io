@@ -65,7 +65,11 @@ To download the data and models, run the following command:
 . scripts/download.sh
 ```
 
-This will download the data and models and save them to the current working directory. See the `datasets` for all of the ultrasound images (both synthetic and experimentally collected) and see the `models` folder for the pre-trained StrainNet models.
+This will download the data and models and save them to the current working directory. See the `datasets` for all of the ultrasound images (both synthetic and experimentally collected) and see the `models` folder for the pre-trained StrainNet models. When running on Windows, the equivalent command is 
+
+```
+scripts\download.sh
+```
 
 ## Demo: Applying StrainNet to a Synthetic Test Case
 
