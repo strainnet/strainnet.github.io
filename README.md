@@ -71,6 +71,8 @@ This will download the data and models and save them to the current working dire
 scripts\download.sh
 ```
 
+TODO: Should folder tree to verify correct download. 
+
 ## Demo: Applying StrainNet to a Synthetic Test Case
 
 To see a demo of StrainNet in action, you can apply the model to a synthetic test case. The synthetic test case is a simulated image with known strains that can be used to test the accuracy of the model.
@@ -81,7 +83,17 @@ To apply StrainNet to the synthetic test case, use the following command:
 . scripts/demo.sh
 ```
 
-You should now see a `results` folder with some plots of the performance on a synthetic test case where the largest strain is 4\% (see the `04DEF` in `StrainNet/datasets/SyntheticTestCases/04DEF`).
+You should now see a `results` folder with StrainNet's performance on a synthetic test case where the largest strain is 4\% (see the `04DEF` in `StrainNet/datasets/SyntheticTestCases`). Specifically, there should be an `error_images` folder, a `pred_strains` folder, and a `visualize` folder, i.e., 
+
+```
+.
+└── results
+    └── synthetic
+        └── 04DEF
+            ├── error_images
+            ├── pred_strains
+            └── visualize
+```
 
 # Generating a training set
 
