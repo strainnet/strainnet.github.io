@@ -215,6 +215,21 @@ To run the `eval.sh` script, simply execute the following command from the termi
 . scripts/eval.sh
 ```
 
+# Citation
+
+```
+@article{huff2024strainnet,
+  title={Deep learning enables accurate soft tissue tendon deformation estimation in vivo via ultrasound imaging},
+  author={Huff, Reece D and Houghton, Frederick and Earl, Conner C and Ghajar-Rahimi, Elnaz and Dogra, Ishan and Yu, Denny and Harris-Adamson, Carisa and Goergen, Craig J and O’Connell, Grace D},
+  journal={Scientific Reports},
+  volume={14},
+  number={1},
+  pages={18401},
+  year={2024},
+  publisher={Nature Publishing Group UK London}
+}
+```
+
 # LICENSE
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/reecehuff/StrainNet/blob/main/LICENSE) file for details.
